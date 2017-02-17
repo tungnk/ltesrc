@@ -9,7 +9,11 @@
 #define SERIALCOMMUNICATION_H_
 #include <termios.h>
 #include "queue.h"
+#include <fcntl.h>
+#include "ltecmd.h"
 
+#define MAX_SERIAL_PACKAGE_SIZE	512
+#define SERIAL_QUEUE_SIZE		8
 
 typedef struct stSerial {
 	unsigned int uiBaudrate;
